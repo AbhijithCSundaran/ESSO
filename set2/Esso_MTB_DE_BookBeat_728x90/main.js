@@ -75,8 +75,8 @@ function animate() {
   //   rotation: randomAngle(-1)
   // });
   tl.to(".headphone", 2, { top: 15, ease: Power2.easeInOut })
-  tl.to(".reflection", 3, { y: 15, autoAlpha: 0, ease: Power2.easeInOut }, "-=2")
-  tl.to(".shadow", 3, { autoAlpha: 0.4, ease: Power2.easeInOut }, "-=2")
+  tl.to(".reflection", 2, { y: 5, autoAlpha: 0, ease: Power2.easeInOut }, "-=2")
+  tl.to(".shadow", 2, { autoAlpha: 0.4, ease: Power2.easeInOut }, "-=2")
 
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=2")
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
