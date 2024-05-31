@@ -52,11 +52,6 @@ html, body {
   height: 90px;
   position: absolute;
 }
-.shadow1{
-  width: 728px;
-  height: 90px;
-  position: absolute;
-}
 
 #main {
   overflow:hidden;

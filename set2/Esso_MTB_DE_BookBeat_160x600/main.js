@@ -18,7 +18,7 @@ var randomTime2 = random(2, 5);
 var randomAngle = random(8, 9);
 
 function rotate(target, direction) {
-  
+
   TweenLite.to(target, randomTime2(), {
     rotation: randomAngle(direction),
     // delay: randomDelay(),
@@ -29,7 +29,7 @@ function rotate(target, direction) {
 }
 
 function moveX(target, direction) {
-  
+
   TweenLite.to(target, randomTime(), {
     x: randomX(direction),
     ease: Sine.easeInOut,
@@ -38,7 +38,7 @@ function moveX(target, direction) {
   });
 }
 
-function moveY(target, direction) {  
+function moveY(target, direction) {
   TweenLite.to(target, randomTime(), {
     y: randomY(direction),
     ease: Sine.easeInOut,
@@ -73,23 +73,22 @@ function animate() {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
-  tl.to(".shadow1", {autoAlpha:1},"+=0.5")
-  tl.to(".shadow1", {autoAlpha:0})
-  tl.to(".headphone", 4, {top: 80, ease: Power2.easeInOut})
-  tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=4.5")
-  tl.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
+  tl.to(".shadow1", { autoAlpha: 1 }, "+=0.5")
+  tl.to(".headphone", 4, { top: 80, ease: Power2.easeInOut })
+  tl.to(".reflection", 4, { y: 20, autoAlpha: 0, ease: Power2.easeInOut }, "-=4.5")
+  tl.to(".shadow", 4, { autoAlpha: 0.4, ease: Power2.easeInOut }, "-=4")
 
-  tl.to(".copy1", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=4")
-  tl.to(".copy1", 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=1.5")
-  tl.to(".copy2", 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
-  tl.to("#cta", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "+=0.5")
-  tl.to("#copy3", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "<")
+  tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
+  tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
+  tl.to(".copy2", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
+  tl.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
+  tl.to("#copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "<")
 
 
   moveY(headphone, -1);
   rotate(headphone, 1);
-  
-  tl.add(() => {pause = true; console.log("paused")}, 7)
+
+  tl.add(() => { pause = true; console.log("paused") }, 7)
 
 }
 
