@@ -6,9 +6,9 @@ var tl;
 
 var pause = false;
 
-var phone = document.getElementsByClassName("phone");
+var headphone = document.getElementsByClassName("headphone");
 
-console.log(phone)
+console.log(headphone)
 
 var randomX = random(10, 20);
 var randomY = random(5, 10);
@@ -67,15 +67,15 @@ function animate() {
   // tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#cta"], { force3D: false, rotation: .001 });
 
-  // tl.to(phone, 0.5, {y: -80})
+  // tl.to(headphone, 0.5, {y: -80})
 
-  // tl.set(phone, {
+  // tl.set(headphone, {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
   tl.to(".shadow1", {autoAlpha:1},"+=0.5")
   tl.to(".shadow1", {autoAlpha:0})
-  tl.to(".phone", 4, {top: 80, ease: Power2.easeInOut})
+  tl.to(".headphone", 4, {top: 80, ease: Power2.easeInOut})
   tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=4.5")
   tl.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
 
@@ -86,8 +86,8 @@ function animate() {
   tl.to("#copy3", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "<")
 
 
-  moveY(phone, -1);
-  rotate(phone, 1);
+  moveY(headphone, -1);
+  rotate(headphone, 1);
   
   tl.add(() => {pause = true; console.log("paused")}, 7)
 

@@ -39,7 +39,7 @@ html, body {
   position: absolute;
 }
 
-.phone, .phone-shadow{
+.headphone, .headphone-shadow{
   z-index: 4;
   position: absolute;
   width: 72px;
@@ -253,7 +253,7 @@ html, body {
 }
 
 
-.phone-shadow{
+.headphone-shadow{
   transform: scaleX(-1) rotate(-180deg);
   opacity: 30%;
 }
