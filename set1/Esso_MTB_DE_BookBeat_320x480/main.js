@@ -15,7 +15,7 @@ function initAd() {
 
   // ----------Frame 1 ------------
   tl.addLabel("frame1", "")
-  tl.to("#copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "")
+  tl.to("#copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=1")
 
   // ----------Frame 2 ------------
   tl.addLabel("frame2", "")
