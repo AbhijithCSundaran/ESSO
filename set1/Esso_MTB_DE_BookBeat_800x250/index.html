@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="ad.size" content="width=800,height=250">
+
+  <title>ESSO</title>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div id="banner" class="masterSize po-abs lt0">
+    <img src="images/Logo.png" alt="Logo" id="Logo" class="po-abs w100">
+    <!-- Frame 1 -->
+    <div id="frame1">
+      <div id="bg1" class="po-abs lt0">
+        <img src="images/bg.jpg" alt="bg" id="bg" class="w100 h100">
+      </div>
+    </div>
+    <!-- Frame 2 -->
+    <div id="frame2">
+      <div id="copy1" class="po-abs hide hide">
+        Das gute Gefühl,<br> eine Pause einzulegen.
+      </div>
+    </div>
+    <!-- Frame 3 -->
+    <div id="frame3">
+      <div id="copy2" class="po-abs hide">
+        Jetzt 3 Monate kostenlos<br> BookBeat hören.
+      </div>
+      <div id="cta" class="po-abs hide">
+        <span id="cta-text">
+          Mehr erfahren<img src="images/chevron.png" id="chevron" class="" />
+        </span>
+      </div>
+      <div id="terms" class="po-abs hide">
+        Komm entspannter ans Ziel.
+      </div>
+    </div>
+
+    <div id="outline_top" class="po-abs outline masterSize"></div>
+    <div id="outline_bottom" class="po-abs outline masterSize"></div>
+    <div id="outline_left" class="po-abs outline masterSize"></div>
+    <div id="outline_right" class="po-abs outline masterSize"></div>
+    <div id="bgExit"></div>
+  </div>
+  <script type="text/javascript">
+    var clickTag = "https://www.esso.de/de-de/download?param=de3";
+    var clickArea = document.getElementById("bgExit");
+    clickArea.onclick = function () {
+      window.open(clickTag);
+    };
+  </script>
+</body>
+
+</html>

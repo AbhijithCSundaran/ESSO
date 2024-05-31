@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   RESET CSS
+*/
+
+
+@font-face {
+  font-family: 'EMprintBold';
+  src: url('fonts/EMprint-Bold.woff2') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************ My CSS *************/
+
+html,
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: sans-serif, Helvetica, Arial;
+  font-weight: 400;
+  color: #fff;
+}
+
+html,
+.masterSize {
+  width: 300px;
+  height: 600px;
+}
+
+span {
+  display: inline-block;
+}
+
+.textC {
+  text-align: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.po-abs {
+  position: absolute;
+}
+
+.lt0 {
+  top: 0px;
+  left: 0px;
+}
+
+.outline {
+  background: #000000;
+  z-index: 10;
+}
+
+#outline_top {
+  height: 1px;
+}
+
+#outline_left {
+  width: 1px;
+}
+
+#outline_right {
+  right: 0;
+  width: 1px;
+}
+
+#outline_bottom {
+  bottom: 0;
+  height: 1px;
+}
+
+#bgExit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+
+#banner {
+  background: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#Logo {
+  width: 178px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 21px;
+  z-index: 10;
+}
+
+#bg1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  will-change: transform;
+  /* transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d; */
+}
+
+#cta {
+  color: #0c479d;
+  background-color: white;
+  font-family: 'EMprintBold';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 108px;
+  height: auto;
+  width: 135px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+#chevron {
+  position: relative;
+  top: 0px;
+  width: auto;
+  height: 13px;
+  margin-left: 2px;
+}
+
+#copy1,
+#copy2 {
+  top: 25px;
+  left: 0px;
+  font-family: 'EMprintBold';
+  font-size: 23px;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 0px;
+}
+
+#terms{
+  bottom: 74px;
+  left: 0px;
+  font-family: 'EMprintBold';
+  font-size: 14.5px;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 0px;
+}
