@@ -75,7 +75,7 @@ function animate() {
   // });
   tl.to(".headphone", 4, { top: 80, ease: Power2.easeInOut })
   tl.to(".reflection", 4, { y: 20, autoAlpha: 0, ease: Power2.easeInOut }, "-=4.5")
-  tl.to(".shadow", 4, { autoAlpha: 0.4, ease: Power2.easeInOut }, "-=4")
+  tl.to(".shadow", 4, { autoAlpha: 0.7, ease: Power2.easeInOut }, "-=4")
 
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
