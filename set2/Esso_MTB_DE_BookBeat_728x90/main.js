@@ -76,7 +76,7 @@ function animate() {
   // });
   tl.to(".headphone", 2, { top: 15, ease: Power2.easeInOut })
   tl.to(".reflection", 2, { y: 5, autoAlpha: 0, ease: Power2.easeInOut }, "-=2")
-  tl.to(".shadow", 2, { autoAlpha: 0.7, ease: Power2.easeInOut }, "-=2")
+  tl.to(".shadow", 2, { autoAlpha: 0.5, ease: Power2.easeInOut }, "-=2")
 
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=2")
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
@@ -88,7 +88,7 @@ function animate() {
   moveY(headphone, -1);
   rotate(headphone, 1);
 
-  tl.add(() => { pause = true; console.log("paused") }, 7)
+  tl.add(() => { pause = true; console.log("paused") }, 5.5)
 }
 
 function endTime() {

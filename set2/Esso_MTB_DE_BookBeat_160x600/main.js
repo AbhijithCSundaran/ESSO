@@ -73,11 +73,11 @@ function animate() {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
-  tl.to(".headphone", 4, { top: 80, ease: Power2.easeInOut })
-  tl.to(".reflection", 4, { y: 20, autoAlpha: 0, ease: Power2.easeInOut }, "-=4")
-  tl.to(".shadow", 4, { autoAlpha: 0.7, ease: Power2.easeInOut }, "-=4")
+  tl.to(".headphone", 2, { top: 80, ease: Power2.easeInOut })
+  tl.to(".reflection", 2, { y: 20, autoAlpha: 0, ease: Power2.easeInOut }, "-=2")
+  tl.to(".shadow", 2, { autoAlpha: 0.5, ease: Power2.easeInOut }, "-=2")
 
-  tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
+  tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=2")
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
   tl.to(".copy2", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
   tl.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
@@ -87,7 +87,7 @@ function animate() {
   moveY(headphone, -1);
   rotate(headphone, 1);
 
-  tl.add(() => { pause = true; console.log("paused") }, 7)
+  tl.add(() => { pause = true; console.log("paused") }, 5.5)
 
 }
 
