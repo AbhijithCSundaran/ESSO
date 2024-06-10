@@ -1,0 +1,270 @@
+@font-face {
+  font-family: EMprintBold;
+  src: url(fonts/EMprint-Bold.woff2);
+}
+
+/* @font-face {
+  font-family: EMprintSemiBold;
+  src: url(fonts/subset-EMprint-Semibold.woff2);
+} */
+
+/* @font-face {
+  font-family: EMprintRegular;
+  src: url(fonts/subset-EMprint-Regular.woff2);
+} */
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:300px;
+  height:250px;
+  margin: 0;
+}
+
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:250px;
+  background-color: #dcdcdc;
+}
+
+.background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.phone, .phone-shadow{
+  z-index: 4;
+  position: absolute;
+  width: 72px;
+  left: 33px;
+  top: 46px;
+}
+
+.shadow{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#main {
+  overflow:hidden;
+}
+
+#imageCont {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:250px;
+  overflow:hidden;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  height: auto;
+}
+
+.full-width {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.copy {
+  font-family: "gillSans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: white;
+  z-index: 5;
+}
+
+.bold {
+  font-family: "EMprintBold", sans-serif;
+}
+
+.semibold {
+  font-family: "EMprintSemiBold", sans-serif;
+}
+
+.regular {
+  font-family: "EMprintRegular", sans-serif;
+}
+
+.copy1 {
+  position: absolute;
+  top: 41px;
+  width: 300px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-align: -webkit-center;
+  left: 58px;
+}
+
+.copy2 {
+  position: absolute;
+  top: 22px;
+  width: 300px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-align: -webkit-center;
+  left: 58px;
+}
+
+.copy3 {
+  position: absolute;
+  top: 170px;
+  width: 300px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  text-align: -webkit-center;
+}
+
+
+
+.terms-text {
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 15px;
+  text-align: left;
+}
+
+.one-spacing {
+  letter-spacing: -0.07em;
+}
+
+#roundel {
+  top: -300px;
+  transform: scale(2);
+  z-index: 0;
+}
+
+.headline {
+  top: 150px;
+  left: 300px;
+  transform: scale(2);
+  opacity: 0;
+  z-index: 1;
+}
+
+#cta {
+  position: absolute;
+  text-align: center;
+  transform-origin: center;
+  border-radius: 100px;
+  top: 104px;
+  left: 137px;
+  background: white;
+  color: #0c479d;
+  line-height: 20px;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+} 
+
+#cta-text {
+  position: relative;
+  top: -1px;
+}
+
+ #chevron {
+  position: relative;
+  top: 2px;
+   
+  width: auto;
+  height: 13px;
+  margin-left: 3px;
+}
+
+#sparkles1,
+#sparkles2,
+#sparkles3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 250px;
+  z-index: 2;
+}
+
+#sparkles2,
+#sparkles3 {
+  opacity: 0;
+}
+
+.sparkle {
+  position: absolute;
+  height: auto;
+  opacity: 0;
+  z-index: 2;
+  transform: scale(0.5);
+}
+
+.sparkle-static {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+#cover1,
+#cover2 {
+  z-index: 3;
+  opacity: 0;
+}
+
+#bgExit {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 85;
+  background-color: rgba(255,255,255,0);
+  border:1px solid #000000;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+
+.phone-shadow{
+  transform: scaleX(-1) rotate(-180deg);
+  opacity: 30%;
+}
+
+.reflection{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.shadow1{
+  height: 250px;
+  width: 300px;
+  position: absolute;
+}
