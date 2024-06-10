@@ -11,7 +11,7 @@ var phone = document.getElementsByClassName("phone");
 console.log(phone)
 
 var randomX = random(10, 20);
-var randomY = random(5, 7);
+var randomY = random(5, 10);
 var randomDelay = random(0, 1);
 var randomTime = random(3, 5);
 var randomTime2 = random(2, 5);
@@ -79,22 +79,24 @@ function animate() {
   //   rotation: randomAngle(-1)
   // });
 
-  tl.to(".phone", 2, {top: 1, ease: Power2.easeInOut})
-  tl.to(".shadow", 2, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=2")
-  // tl.to(".reflection", 2, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=2")
+  tl.to(".phone", 4, {top: 16, ease: Power2.easeInOut})
+  // tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=4")
+  tl.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
+  tl.to(".copy1", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=4")
 
-  tl.to(".copy1", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=2")
   tl.to(".copy1", 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=1.5")
   tl.to(".copy2", 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
   tl.to("#cta", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "+=0.5")
+  
+  tl.to(".phone", 4, { top: 36, ease: Power2.easeInOut },"-=4")
+  tl.to(".shadow", 4, {autoAlpha: 0.5, ease: Power2.easeInOut}, "-=4")
 
-  tl.to(".phone", 2, {top: 5, ease: Power2.easeInOut},"-=2")
-  tl.to(".shadow", 2, {autoAlpha: 0.5, ease: Power2.easeInOut}, "-=2")
 
   moveY(phone, -1);
   rotate(phone, 1);
   
   tl.add(() => {pause = true; console.log("paused")}, 7)
+
 }
 
 function endTime() {
