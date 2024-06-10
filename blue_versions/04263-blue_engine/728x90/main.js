@@ -80,7 +80,7 @@ function animate() {
   // });
 
   tl.to(".phone", 2, {top: 4, ease: Power2.easeInOut})
-  tl.to(".shadow", 2, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=2")
+  tl.to(".shadow", 2, {autoAlpha: 0.3, ease: Power2.easeInOut}, "-=2")
   // tl.to(".reflection", 2, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=2")
 
   tl.to(".copy1", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=2")
@@ -89,7 +89,7 @@ function animate() {
   tl.to("#cta", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "+=0.5")
 
   // tl.to(".phone", 2, {top: 6, ease: Power2.easeInOut},"-=2")
-  // tl.to(".shadow", 2, {autoAlpha: 0.5, ease: Power2.easeInOut}, "-=2")
+  tl.to(".shadow", 2, {autoAlpha: 0.5, ease: Power2.easeInOut}, "-=2")
 
   moveY(phone, -1);
   rotate(phone, 1);
