@@ -44,7 +44,7 @@ html, body {
   position: absolute;
   width: 72px;
   left: 33px;
-  top: 46px;
+  top: 78px;
 }
 
 .shadow{
@@ -121,7 +121,7 @@ html, body {
 
 .copy2 {
   position: absolute;
-  top: 22px;
+  top: 47px;
   width: 300px;
   font-size: 18px;
   line-height: 22px;
@@ -130,18 +130,6 @@ html, body {
   text-align: -webkit-center;
   left: 58px;
 }
-
-.copy3 {
-  position: absolute;
-  top: 170px;
-  width: 300px;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.2px;
-  text-align: -webkit-center;
-}
-
-
 
 .terms-text {
   font-weight: normal;
@@ -173,18 +161,18 @@ html, body {
   text-align: center;
   transform-origin: center;
   border-radius: 100px;
-  top: 104px;
-  left: 137px;
+  top: 106px;
+  left: 152px;
   background: white;
   color: #0c479d;
   line-height: 20px;
-  width: 140px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-} 
+width: 118px;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+}
 
 #cta-text {
   position: relative;
@@ -261,10 +249,5 @@ html, body {
 .reflection{
   width: 100%;
   height: 100%;
-  position: absolute;
-}
-.shadow1{
-  height: 250px;
-  width: 300px;
   position: absolute;
 }

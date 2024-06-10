@@ -11,12 +11,12 @@ var phone = document.getElementsByClassName("phone");
 
 console.log(phone)
 
-var randomX = random(20, 15);
+var randomX = random(10, 20);
 var randomY = random(5, 7);
 var randomDelay = random(0, 1);
-var randomTime = random(2, 3);
-var randomTime2 = random(2, 3);
-var randomAngle = random(12, 13);
+var randomTime = random(3, 5);
+var randomTime2 = random(2, 5);
+var randomAngle = random(8, 9);
 
 function rotate(target, direction) {
   
@@ -79,17 +79,15 @@ function animate() {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
-  
-  tl1.to(".phone", 2, {top: 15, ease: Power2.easeInOut})
-  // tl1.to(".reflection", 2, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=2")
-  tl1.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=2")
-  tl1.to(".shadow1", 4, {autoAlpha: 0, ease: Power2.easeInOut}, "<")
+
+  tl1.to(".phone", 2, {top: -5, ease: Power2.easeInOut})
+  tl1.to(".reflection", 2, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=2")
+  tl1.to(".shadow", 2, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=2")
 
   tl1.to(".copy1", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "-=2")
   tl1.to(".copy1", 0.5, {autoAlpha: 0, ease: Power2.easeInOut}, "+=1.5")
   tl1.to(".copy2", 0.5, {autoAlpha: 1, ease: Power2.easeInOut})
   tl1.to("#cta", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "+=0.5")
-  tl1.to("#copy3", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "<")
 
 
   moveY(phone, -1);
