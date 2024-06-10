@@ -46,7 +46,7 @@
             gap: 8px;
             background-color: #1a1a1a;
             color: #f0f8ff;
-            border-bottom: 5px solid #c4eb17;
+            border-bottom: 5px solid #006fb9;
             /* border-radius: 10px 10px 0px 0px; */
             overflow: hidden;
             position: sticky;
@@ -68,11 +68,11 @@
         }
 
         .tab-btn:hover {
-            color: #c4eb17;
+            color: #006fb9;
         }
 
         .tab-btn.active {
-            background-color: #c4eb17;
+            background-color: #006fb9;
             color: #1a1a1a
         }
 
@@ -95,7 +95,9 @@
         }
 
         .re_btn {
-            background-color: #c4eb17;
+            background-color: #006fb9;
+            color: white;
+            font-weight: 900;
             margin: 5px auto 0 0;
             width: 30px;
             height: 30px;
@@ -104,13 +106,13 @@
             align-items: center;
             border-radius: 15px;
             border: none;
-            transform: rotate(0deg);
+            transform: rotateX(180deg) rotateZ(0deg);
             transition: all 0s ease;
         }
 
         .re_btn:hover {
             transition: all 0.5s ease;
-            transform: rotate(360deg);
+            transform: rotateX(180deg) rotateZ(-360deg);
         }
 
         .view_btn {
@@ -123,7 +125,7 @@
         }
 
         .view_btn:hover {
-            color: #c4eb17;
+            color: #006fb9;
         }
     </style>
 </head>
@@ -134,8 +136,13 @@
         ESSO Banners
     </h2>
     <div class="maincontainer">
+        <div class="tab-buttons">
+            <button class="tab-btn active" content-id="BlueEngine"> BlueEngine </button>
+            <!-- <button class="tab-btn" content-id="Event"> Event </button>
+            <button class="tab-btn" content-id="Mortgage"> Mortgage </button> -->
+        </div>
         <div class="tab-contents">
-            <div class="content show" id="Cashback">
+            <div class="content show" id="BlueEngine">
                 
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
