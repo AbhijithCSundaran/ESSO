@@ -190,10 +190,9 @@ html, body {
 
  #chevron {
   position: relative;
-  top: 2px;
-   
+  top: 1.5px;
   width: auto;
-  height: 13px;
+  height: 12px;
   margin-left: 3px;
 }
 
