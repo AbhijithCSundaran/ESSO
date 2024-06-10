@@ -115,9 +115,9 @@ body {
   position: absolute;
   top: 62px;
   width: 300px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 22px;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.2px;
   text-align: center;
   text-align: -webkit-center;
   left: 65px;
