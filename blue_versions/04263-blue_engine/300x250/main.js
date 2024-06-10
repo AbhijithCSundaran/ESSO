@@ -89,7 +89,7 @@ function animate() {
   tl.to("#cta", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "+=0.5")
   
   tl.to(".phone", 4, { top: 36, ease: Power2.easeInOut },"-=4")
-  tl.to(".shadow", 4, {autoAlpha: 0.6, ease: Power2.easeInOut}, "-=4")
+  tl.to(".shadow", 4, {autoAlpha: 0.5, ease: Power2.easeInOut}, "-=4")
 
 
   moveY(phone, -1);
