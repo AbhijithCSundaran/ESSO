@@ -40,7 +40,6 @@ html, body {
 }
 
 .woman{
-  z-index: 4;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -115,7 +114,7 @@ html, body {
 
 .copy1 {
   position: absolute;
-  top: 398px;
+  top: 396px;
   width: 300px;
   font-size: 23px;
   line-height: 28px;
@@ -126,7 +125,7 @@ html, body {
 
 .copy2 {
   position: absolute;
-  top: 400px;
+  top: 396px;
   width: 300px;
   font-size: 23px;
   line-height: 28px;
@@ -165,12 +164,12 @@ html, body {
   text-align: center;
   transform-origin: center;
   border-radius: 100px;
-  top: 469px;
-  left: 89px;
+  top: 470px;
+  left: 75px;
   background: white;
   color: #0c479d;
   line-height: 20px;
-  width: 118px;
+  width: 152px;
   height: 35px;
   display: flex;
   justify-content: center;

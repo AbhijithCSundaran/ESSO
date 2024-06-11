@@ -115,24 +115,24 @@ html, body {
 }
 
 .copy1 {
-  left: -200px;
+  left: 226px;
   position: absolute;
-  top: 59px;
+  top: 39px;
   width: 800px;
   font-size: 23px;
-  line-height: 26px;
+  line-height: 28px;
   letter-spacing: -0.2px;
   text-align: center;
   text-align: -webkit-center;
 }
 
 .copy2 {
-  left: -200px;
+  left: 226px;
   position: absolute;
-  top: 59px;
+  top: 39px;
   width: 800px;
   font-size: 23px;
-  line-height: 26px;
+  line-height: 28px;
   letter-spacing: -0.2px;
   text-align: center;
   text-align: -webkit-center;
@@ -168,12 +168,12 @@ html, body {
   text-align: center;
   transform-origin: center;
   border-radius: 100px;
-  top: 99px;
-  left: 141px;
+  top: 110px;
+  right: 96px;
   background: white;
   color: #0c479d;
   line-height: 20px;
-  width: 118px;
+  width: 152px;
   height: 35px;
   display: flex;
   justify-content: center;
@@ -191,7 +191,7 @@ html, body {
   top: 1.5px;
   width: auto;
   height: 12px;
-  margin-left: 0px;
+  margin-left: 2px;
 }
 
 #sparkles1,

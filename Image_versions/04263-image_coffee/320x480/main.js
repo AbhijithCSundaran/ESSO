@@ -24,25 +24,25 @@ var randomAngle = random(2, 3);
 
 function rotate(target, direction) {
   if (hover === true && pause === false) {
-  TweenLite.to(target, randomTime2(), {
-    rotation: randomAngle(direction),
-    // delay: randomDelay(),
-    ease: Sine.easeInOut,
-    onComplete: pause ? null : rotate,
-    onCompleteParams: [target, direction * -1]
-  });
-}
+    TweenLite.to(target, randomTime2(), {
+      rotation: randomAngle(direction),
+      // delay: randomDelay(),
+      ease: Sine.easeInOut,
+      onComplete: pause ? null : rotate,
+      onCompleteParams: [target, direction * -1]
+    });
+  }
 }
 
 function moveX(target, direction) {
   if (hover === true && pause === false) {
-  TweenLite.to(target, randomTime(), {
-    x: randomX(direction),
-    ease: Sine.easeInOut,
-    onComplete: pause ? null : moveX,
-    onCompleteParams: [target, direction * -1]
-  });
-}
+    TweenLite.to(target, randomTime(), {
+      x: randomX(direction),
+      ease: Sine.easeInOut,
+      onComplete: pause ? null : moveX,
+      onCompleteParams: [target, direction * -1]
+    });
+  }
 }
 
 function moveY(target, direction) {
@@ -56,9 +56,9 @@ function moveY(target, direction) {
     });
 
     TweenLite.to(target[1], time, {
-      y: `+=${(dir * -1 )}`,
+      y: `+=${(dir * -1)}`,
       ease: Sine.easeInOut,
-    }); 
+    });
 
     TweenLite.to(target[2], time, {
       y: `+=${dir * -0.8}`,
@@ -101,39 +101,23 @@ function animate() {
   //   rotation: randomAngle(-1)
   // });
 
-  tl1.to(woman, 4, {
-    y: -45,
-    ease: Power2.easeOut,
-  });
+  tl1.to(woman, 4, { y: -60, ease: Power2.easeOut, });
+  tl1.to(woman, 4, { x: 0, ease: Power4.easeOut, }, "-=4");
+  tl1.to(carShadow, 4, { y: -20, ease: Power2.easeOut, }, "-=4");
+  tl1.to(groundShadow, 4, { y: -20, x: 15, ease: Power2.easeOut, }, "-=4");
 
-  tl1.to(woman, 4, {
-    x: 0,
-    ease: Power4.easeOut,
-  }, "-=4");
-
-  tl1.to(carShadow, 4, {
-    y: -20,
-    ease: Power2.easeOut,
-  }, "-=4");
-
-  tl1.to(groundShadow, 4, {
-    y: -20,
-    x: 15,
-    ease: Power2.easeOut,
-  }, "-=4");
-
-  tl1.add(() => {hover = true; moveY([woman, carShadow, groundShadow], -1); rotate(woman, 1); moveX(woman, -1)}, "-=1")
+  tl1.add(() => { hover = true; moveY([woman, carShadow, groundShadow], -1); rotate(woman, 1); moveX(woman, -1) }, "-=1")
   // tl1.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=5")
   // tl1.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
 
-  tl1.to(".copy1", 0.3, {autoAlpha: 1, ease: Power2.easeInOut}, "-=4")
-  tl1.to(".copy1", 0.3, {autoAlpha: 0, ease: Power2.easeInOut}, "-=0.4")
-  tl1.to(".copy2", 0.3, {autoAlpha: 1, ease: Power2.easeInOut})
-  tl1.to("#cta", 0.5, {autoAlpha: 1, ease: Power2.easeInOut}, "+=0.5")
+  tl1.to(".copy1", 0.3, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
+  tl1.to(".copy1", 0.3, { autoAlpha: 0, ease: Power2.easeInOut }, "-=0.4")
+  tl1.to(".copy2", 0.3, { autoAlpha: 1, ease: Power2.easeInOut })
+  tl1.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
 
   // rotate(woman, 1);
 
-  tl1.add(() => {pause = true; console.log("paused")}, 15)
+  tl1.add(() => { pause = true; console.log("paused") }, 15)
 }
 
 function endTime() {
