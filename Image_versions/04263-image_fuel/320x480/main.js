@@ -3,7 +3,6 @@ var startTime;
 
 // Timeline reference
 var tl;
-var tl;
 
 var pause = false;
 
@@ -57,6 +56,8 @@ function moveY(target, direction) {
 
     TweenLite.to(target[1], time, {
       opacity: `+=${(dir * -0.01)}`,
+      y: `+=${dir}`,
+      x: `+=${dir * -0.8}`,
       ease: Sine.easeInOut,
       onComplete: moveY,
       onCompleteParams: [target, direction * -1],
@@ -96,7 +97,7 @@ function animate() {
   // });
 
   tl.to(woman, 4, { y: -60, ease: Power2.easeOut, });
-  tl.to(womanShadow, 4, { opacity: 0.6, ease: Power2.easeOut, }, "-=4");
+  tl.to(womanShadow, 4, { y: 15, x: -20, opacity: 0.6, ease: Power2.easeOut, }, "-=4");
   tl.to(handShadow, 4, { opacity: 1, x: 0, y: 0, ease: Power2.easeOut, }, "-=4");
 
 
