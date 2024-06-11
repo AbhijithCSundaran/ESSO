@@ -45,7 +45,6 @@ function moveX(target, direction) {
 }
 
 function moveY(target, direction) {
-  debugger;
   var time = randomTime();
   var dir = randomY(direction);
 
