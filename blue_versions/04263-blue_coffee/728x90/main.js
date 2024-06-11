@@ -80,7 +80,7 @@ function animate() {
   // });
 
   tl.to(".phone", 2, { y: -4, ease: Power2.easeInOut })
-  tl.to(".shadow", 2, { autoAlpha: 0.3, ease: Power2.easeInOut }, "-=2")
+  tl.to(".shadow", 2, { autoAlpha: 0.2, ease: Power2.easeInOut }, "-=2")
   tl.to(".reflection", 2, { y: 20, autoAlpha: 0, ease: Power2.easeInOut }, "-=2")
 
   tl.add(() => { moveY(phone, -1); }, "-=2")
