@@ -94,7 +94,7 @@ function animate() {
   //   rotation: randomAngle(-1)
   // });
 
-  tl.to(woman, 4, { y: -50, ease: Power2.easeOut, });
+  tl.to(woman, 4, { y: -85, ease: Power2.easeOut, });
   tl.to(womanShadow, 4, { opacity: 0.6, ease: Power2.easeOut, }, "-=4");
   tl.to(handShadow, 4, { opacity: 1, x: 0, y: 0, ease: Power2.easeOut, }, "-=4");
 
