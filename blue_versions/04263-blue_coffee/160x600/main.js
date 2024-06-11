@@ -40,7 +40,7 @@ function moveX(target, direction) {
 
 function moveY(target, direction) {
   TweenLite.to(target, randomTime(), {
-    y: randomY(direction) - 136,
+    y: randomY(direction) - 116,
     ease: Sine.easeInOut,
     onComplete: pause ? null : moveY,
     onCompleteParams: [target, direction * -1]
@@ -79,7 +79,7 @@ function animate() {
   //   rotation: randomAngle(-1)
   // });
 
-  tl.to(".phone", 4, { y: -136, ease: Power2.easeInOut })
+  tl.to(".phone", 4, { y: -116, ease: Power2.easeInOut })
   tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=4.5")
   tl.to(".shadow", 4, { autoAlpha: 0.2, ease: Power2.easeInOut }, "-=4")
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
