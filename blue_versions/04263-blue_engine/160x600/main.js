@@ -91,6 +91,7 @@ function animate() {
   // tl.to(".phone", 4, { top: 136, ease: Power2.easeInOut },"-=4")
   // tl.to(".shadow", 4, {autoAlpha: 0.5, ease: Power2.easeInOut}, "-=4")
 
+  tl.add(() => { moveY(phone, -1); rotate(phone, 1)}, 4)
   // tl.add(() => { moveY(phone, -1); rotate(phone, 1)}, 4)
   // moveY(phone, -1);
   // rotate(phone, 1);
