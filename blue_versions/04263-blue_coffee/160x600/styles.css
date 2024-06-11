@@ -45,9 +45,9 @@ body {
 .phone-shadow {
   z-index: 4;
   position: absolute;
-  width: 208px;
+  width: 209px;
   left: -24px;
-  top: 159px;
+  top: 160px;
 }
 
 .shadow {
