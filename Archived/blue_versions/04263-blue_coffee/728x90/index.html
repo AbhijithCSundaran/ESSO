@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="ad.size" content="width=728,height=90">
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script type="text/javascript" src="main.js"></script>
+
+  <script type="text/javascript">
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+      return results === null ? "" :
+        decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    var clickTAG = getParameterByName("clickTAG");  
+  </script>
+
+</head>
+
+<body onload="init();">
+
+  <a href="javascript:window.open(window.clickTAG);void(0);">
+    <div id="main">
+      <!-- <img src="ref4.jpg" alt="" style="width: 100%; height: 100%; z-index: 100; opacity: 50%; position: absolute;"> -->
+      <img src="images/bg.jpg" alt="" class="background">
+
+      <div id="animContainer">
+        <img class="phone" src="images/phone.png" alt="">
+        <img class="reflection" src="images/reflection.png" alt="">
+        <img class="shadow" src="images/shadow.png" alt="">
+      </div>
+
+      <div id="copy1" class="copy bold copy1 absolute hidden">
+        Das angenehme Gefühl,<br>
+        selbst Energie zu tanken.
+      </div>
+
+      <div id="copy2" class="copy bold copy2 absolute hidden">
+        Finde jetzt eine Station in deiner Nähe.
+      </div>
+
+
+      <div id="cta" class="bold hidden">
+        <span id="cta-text">
+          Mehr erfahren&nbsp;<img src="images/chevron.png" id="chevron" class="" />
+        </span>
+      </div>
+
+      <img src="images/logo.png" id="logo" class="full-width" />
+
+      <div id="bgExit"></div>
+
+    </div>
+  </a>
+</body>
+
+</html>
