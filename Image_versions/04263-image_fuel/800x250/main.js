@@ -103,11 +103,10 @@ function animate() {
   tl.to(".copy1", 0.3, { autoAlpha: 0, ease: Power2.easeInOut }, "-=0.4")
   tl.to(".copy2", 0.3, { autoAlpha: 1, ease: Power2.easeInOut })
   tl.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
-
   tl.to(".copy2", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
   tl.to(".copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
-  // // rotate(woman, 1);
 
+  // // rotate(woman, 1);
   // tl.add(() => {pause = true; console.log("paused")}, 15)
 }
 

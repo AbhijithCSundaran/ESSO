@@ -102,7 +102,7 @@ function animate() {
 
   tl.to(woman, 4, { y: -70, ease: Power2.easeOut, });
   tl.to(woman, 4, { x: 0, ease: Power4.easeOut, }, "-=4");
-  tl.to(carShadow, 4, { y: -50, ease: Power2.easeOut, }, "-=4");
+  // tl.to(carShadow, 4, { y: -50, ease: Power2.easeOut, }, "-=4");
   tl.to(groundShadow, 4, { y: -30, x: 40, ease: Power2.easeOut, }, "-=4");
 
   tl.add(() => { hover = true; moveY([woman, carShadow, groundShadow], -1); rotate(woman, 1); moveX(woman, -1) }, "-=1")

@@ -121,7 +121,8 @@ body {
   text-align: -webkit-center;
 }
 
-.copy2 {
+.copy2,
+.copy3 {
   position: absolute;
   top: 347px;
   width: 160px;

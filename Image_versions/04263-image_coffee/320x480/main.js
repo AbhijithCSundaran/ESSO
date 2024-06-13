@@ -3,7 +3,6 @@ var startTime;
 
 // Timeline reference
 var tl;
-var tl1;
 
 var pause = false;
 
@@ -84,40 +83,42 @@ function init() {
   tl2 = new TimelineMax({});
 
   // Set Global Timeline
-  tl1 = new TimelineMax({ onComplete: endTime });
+  tl = new TimelineMax({ onComplete: endTime });
 
   var delayRollover = setTimeout(setRollover, 9000);
   animate();
 }
 
 function animate() {
-  // tl1.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl1.set(["#cta"], { force3D: false, rotation: 0.001 });
+  // tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
+  tl.set(["#cta"], { force3D: false, rotation: 0.001 });
 
-  // tl1.to(phone, 0.5, {y: -80})
+  // tl.to(phone, 0.5, {y: -80})
 
-  // tl1.set(phone, {
+  // tl.set(phone, {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
 
-  tl1.to(woman, 4, { y: -60, ease: Power2.easeOut, });
-  tl1.to(woman, 4, { x: 0, ease: Power4.easeOut, }, "-=4");
-  tl1.to(carShadow, 4, { y: -20, ease: Power2.easeOut, }, "-=4");
-  tl1.to(groundShadow, 4, { y: -20, x: 15, ease: Power2.easeOut, }, "-=4");
+  tl.to(woman, 4, { y: -60, ease: Power2.easeOut, });
+  tl.to(woman, 4, { x: 0, ease: Power4.easeOut, }, "-=4");
+  // tl.to(carShadow, 4, { y: -20, ease: Power2.easeOut, }, "-=4");
+  tl.to(groundShadow, 4, { y: -20, x: 15, ease: Power2.easeOut, }, "-=4");
 
-  tl1.add(() => { hover = true; moveY([woman, carShadow, groundShadow], -1); rotate(woman, 1); moveX(woman, -1) }, "-=1")
-  // tl1.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=5")
-  // tl1.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
+  tl.add(() => { hover = true; moveY([woman, carShadow, groundShadow], -1); rotate(woman, 1); moveX(woman, -1) }, "-=1")
+  // tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=5")
+  // tl.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
 
-  tl1.to(".copy1", 0.3, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
-  tl1.to(".copy1", 0.3, { autoAlpha: 0, ease: Power2.easeInOut }, "-=0.4")
-  tl1.to(".copy2", 0.3, { autoAlpha: 1, ease: Power2.easeInOut })
-  tl1.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
+  tl.to(".copy1", 0.3, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
+  tl.to(".copy1", 0.3, { autoAlpha: 0, ease: Power2.easeInOut }, "-=0.4")
+  tl.to(".copy2", 0.3, { autoAlpha: 1, ease: Power2.easeInOut })
+  tl.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
+  tl.to(".copy2", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
+  tl.to(".copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
 
   // rotate(woman, 1);
 
-  tl1.add(() => { pause = true; console.log("paused") }, 15)
+  tl.add(() => { pause = true; console.log("paused") }, 15)
 }
 
 function endTime() {

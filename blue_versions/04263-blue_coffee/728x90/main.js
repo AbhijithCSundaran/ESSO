@@ -89,9 +89,8 @@ function animate() {
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
   tl.to(".copy2", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
   tl.to("#cta", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "+=0.5")
-
-  // tl.to(".phone", 2, {top: 6, ease: Power2.easeInOut},"-=2")
-  // tl.to(".shadow", 2, { autoAlpha: 0.5, ease: Power2.easeInOut }, "-=2")
+  tl.to(".copy2", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
+  tl.to(".copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
 
   // tl.add(() => { moveY(phone, -1); rotate(phone, 1)}, 2)
   // moveY(phone, -1);
