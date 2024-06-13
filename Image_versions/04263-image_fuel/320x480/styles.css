@@ -39,7 +39,7 @@ html, body {
   position: absolute;
 }
 
-.woman{
+.human{
   top: 0px;
   position: absolute;
   width: 100%;
@@ -52,7 +52,7 @@ html, body {
   position: absolute;
 }
 
-.woman-shadow{
+.human-shadow{
   width: 100%;
   height: 100%;
   position: absolute;

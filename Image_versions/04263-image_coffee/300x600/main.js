@@ -6,7 +6,7 @@ var tl;
 
 var pause = false;
 
-var woman = document.getElementsByClassName("woman");
+var human = document.getElementsByClassName("human");
 var carShadow = document.getElementsByClassName("car-shadow");
 var groundShadow = document.getElementsByClassName("shadow-ground");
 
@@ -100,12 +100,12 @@ function animate() {
   //   rotation: randomAngle(-1)
   // });
 
-  tl.to(woman, 4, { y: -70, ease: Power2.easeOut, });
-  tl.to(woman, 4, { x: 0, ease: Power4.easeOut, }, "-=4");
+  tl.to(human, 4, { y: -70, ease: Power2.easeOut, });
+  tl.to(human, 4, { x: 0, ease: Power4.easeOut, }, "-=4");
   // tl.to(carShadow, 4, { y: -50, ease: Power2.easeOut, }, "-=4");
   tl.to(groundShadow, 4, { y: -30, x: 40, ease: Power2.easeOut, }, "-=4");
 
-  tl.add(() => { hover = true; moveY([woman, carShadow, groundShadow], -1); rotate(woman, 1); moveX(woman, -1) }, "-=1")
+  tl.add(() => { hover = true; moveY([human, carShadow, groundShadow], -1); rotate(human, 1); moveX(human, -1) }, "-=1")
   // tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=5")
   // tl.to(".shadow", 4, {autoAlpha: 0.4, ease: Power2.easeInOut}, "-=4")
 
@@ -116,7 +116,7 @@ function animate() {
   tl.to(".copy2", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
   tl.to(".copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
 
-  // rotate(woman, 1);
+  // rotate(human, 1);
 
   tl.add(() => { pause = true; console.log("paused") }, 15)
 }
