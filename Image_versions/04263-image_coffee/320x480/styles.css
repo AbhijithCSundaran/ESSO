@@ -246,7 +246,7 @@ body {
 }
 
 
-.phone-shadow {
+.object-shadow {
   transform: scaleX(-1) rotate(-180deg);
   opacity: 30%;
 }

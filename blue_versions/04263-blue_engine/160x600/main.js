@@ -6,9 +6,9 @@ var tl;
 
 var pause = false;
 
-var phone = document.getElementsByClassName("phone");
+var object = document.getElementsByClassName("object");
 
-console.log(phone)
+console.log(object)
 
 var randomX = random(10, 20);
 var randomY = random(5, 10);
@@ -72,14 +72,14 @@ function animate() {
   // tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#cta"], { force3D: false, rotation: .001 });
 
-  // tl.to(phone, 0.5, {y: -80})
+  // tl.to(object, 0.5, {y: -80})
 
-  // tl.set(phone, {
+  // tl.set(object, {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
 
-  tl.to(".phone", 4, { y: -136, ease: Power2.easeInOut })
+  tl.to(".object", 4, { y: -136, ease: Power2.easeInOut })
   // tl.to(".reflection", 4, {y: 20, autoAlpha: 0, ease: Power2.easeInOut}, "-=4.5")
   tl.to(".shadow", 4, { autoAlpha: 0.3, ease: Power2.easeInOut }, "-=4")
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
@@ -90,9 +90,9 @@ function animate() {
   tl.to(".copy2", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
   tl.to(".copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
 
-  tl.add(() => { moveY(phone, -1); rotate(phone, 1) }, 4)
-  // moveY(phone, -1);
-  // rotate(phone, 1);
+  tl.add(() => { moveY(object, -1); rotate(object, 1) }, 4)
+  // moveY(object, -1);
+  // rotate(object, 1);
 
   tl.add(() => { pause = true; console.log("paused") }, 7)
 

@@ -41,8 +41,8 @@ body {
   position: absolute;
 }
 
-.phone,
-.phone-shadow {
+.object,
+.object-shadow {
   z-index: 4;
   position: absolute;
   width: 100%;
@@ -242,7 +242,7 @@ body {
 }
 
 
-.phone-shadow {
+.object-shadow {
   transform: scaleX(-1) rotate(-180deg);
   opacity: 30%;
 }

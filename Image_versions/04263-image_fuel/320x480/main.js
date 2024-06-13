@@ -12,7 +12,7 @@ var handShadow = document.getElementsByClassName("hand-shadow");
 
 var hover = false;
 
-// console.log(phone)
+// console.log(object)
 
 var randomX = random(4, 5);
 var randomY = random(5, 7);
@@ -89,9 +89,9 @@ function animate() {
   // tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
   tl.set(["#cta"], { force3D: false, rotation: 0.001 });
 
-  // tl.to(phone, 0.5, {y: -80})
+  // tl.to(object, 0.5, {y: -80})
 
-  // tl.set(phone, {
+  // tl.set(object, {
   //   y: randomX(1),
   //   rotation: randomAngle(-1)
   // });
