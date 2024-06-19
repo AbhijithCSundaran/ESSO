@@ -107,7 +107,7 @@ function animate() {
   tl.to(".copy3", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
 
   // // rotate(human, 1);
-  // tl.add(() => {pause = true; console.log("paused")}, 15)
+  tl.add(() => {pause = true; console.log("paused")}, 15)
 }
 
 function endTime() {

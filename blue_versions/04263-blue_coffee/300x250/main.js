@@ -96,7 +96,7 @@ function animate() {
   // moveY(object, -1);
   // rotate(object, 1);
 
-  tl.add(() => { pause = true; console.log("paused") }, 7)
+  tl.add(() => { pause = true; console.log("paused") }, 15)
 
 }
 

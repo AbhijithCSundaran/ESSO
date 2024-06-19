@@ -115,7 +115,7 @@ function animate() {
 
   // // rotate(human, 1);
 
-  // tl.add(() => {pause = true; console.log("paused")}, 15)
+  tl.add(() => {pause = true; console.log("paused")}, 15)
 }
 
 function endTime() {
