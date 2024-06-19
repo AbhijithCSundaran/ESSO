@@ -48,12 +48,14 @@ body {
   width: 100%;
   left: 0px;
   top: 199px;
+  transition: all 0.1s linear;
 }
 
 .shadow {
   width: 100%;
   height: 100%;
   position: absolute;
+  transition: all 0.1s linear;
 }
 
 #main {

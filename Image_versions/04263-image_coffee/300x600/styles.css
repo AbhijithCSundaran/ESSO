@@ -45,12 +45,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: all 0.1s linear;
 }
 
 .shadow {
   width: 100%;
   height: 100%;
   position: absolute;
+  transition: all 0.1s linear;
 }
 
 .shadow-ground {
@@ -58,6 +60,7 @@ body {
   left: 210px;
   width: 300px;
   position: absolute;
+  transition: all 0.1s linear;
 }
 
 #main {

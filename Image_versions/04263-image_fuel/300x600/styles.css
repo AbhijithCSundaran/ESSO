@@ -45,12 +45,14 @@ html, body {
   width: 100%;
   height: 100%;
   /* transform: translateX(-8px) scale(0.95); */
+  transition: all 0.1s linear;
 }
 
 .shadow{
   width: 100%;
   height: 100%;
   position: absolute;
+  transition: all 0.1s linear;
 }
 
 .human-shadow{
@@ -58,6 +60,7 @@ html, body {
   height: 100%;
   position: absolute;
   mix-blend-mode:multiply;
+  transition: all 0.1s linear;
 }
 
 #main {
