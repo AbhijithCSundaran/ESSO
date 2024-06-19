@@ -83,7 +83,7 @@ function animate() {
   tl.to(".shadow", 2, { autoAlpha: 0.2, ease: Power2.easeInOut }, "-=2")
   tl.to(".reflection", 2, { y: 20, autoAlpha: 0, ease: Power2.easeInOut }, "-=2")
 
-  tl.add(() => { moveY(object, -1); }, "-=2")
+  tl.add(() => { moveY(object, -1); rotate(object, 1)}, "-=2")
 
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=2")
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")

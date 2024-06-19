@@ -15,7 +15,7 @@ var randomY = random(5, 10);
 var randomDelay = random(0, 1);
 var randomTime = random(3, 5);
 var randomTime2 = random(2, 5);
-var randomAngle = random(8, 9);
+var randomAngle = random(1, 2);
 
 function rotate(target, direction) {
 
@@ -84,7 +84,7 @@ function animate() {
   tl.to(".shadow", 4, { autoAlpha: 0.2, ease: Power2.easeInOut }, "-=4")
   tl.to(".copy1", 0.5, { autoAlpha: 1, ease: Power2.easeInOut }, "-=4")
 
-  tl.add(() => { moveY(object, -1); }, "-=0")
+  tl.add(() => { moveY(object, -1); rotate(object, 1)}, "-=0")
 
   tl.to(".copy1", 0.5, { autoAlpha: 0, ease: Power2.easeInOut }, "+=1.5")
   tl.to(".copy2", 0.5, { autoAlpha: 1, ease: Power2.easeInOut })
